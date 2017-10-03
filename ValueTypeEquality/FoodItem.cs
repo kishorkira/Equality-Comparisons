@@ -1,7 +1,10 @@
-﻿namespace ValueTypeEquality
+﻿using System;
+
+namespace ValueTypeEquality
 {
     public enum FoodGroup { Meat, Fruit, Vegetables, Sweet}
-    public struct FoodItem
+
+    public struct FoodItem : IEquatable<FoodItem>
     {
         private readonly string _name;
         private readonly FoodGroup _foodGroup;
@@ -16,6 +19,13 @@
         public override string ToString()
         {
             return this._name;
+        }
+
+        public bool Equals(FoodItem other)
+        {
+            return this._name == other._name 
+                   && 
+                   this._foodGroup == other._foodGroup;
         }
     }
 }
