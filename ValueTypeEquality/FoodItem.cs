@@ -20,6 +20,13 @@ namespace ValueTypeEquality
         {
             return this._name;
         }
+        public override bool Equals(object obj)
+        {
+            if (obj is FoodItem)
+                return Equals((FoodItem)obj);
+            else
+                return false;
+        }
 
         public bool Equals(FoodItem other)
         {
