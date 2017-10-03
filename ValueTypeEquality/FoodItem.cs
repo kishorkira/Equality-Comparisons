@@ -42,5 +42,9 @@ namespace ValueTypeEquality
         {
             return !lhs.Equals(rhs);
         }
+        public override int GetHashCode()
+        {
+            return this._name.GetHashCode() ^ this._foodGroup.GetHashCode();
+        }
     }
 }
