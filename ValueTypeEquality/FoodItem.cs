@@ -34,5 +34,13 @@ namespace ValueTypeEquality
                    && 
                    this._foodGroup == other._foodGroup;
         }
+        public static bool operator ==(FoodItem lhs, FoodItem rhs)
+        {
+            return lhs.Equals(rhs);
+        }
+        public static bool operator !=(FoodItem lhs, FoodItem rhs)
+        {
+            return !lhs.Equals(rhs);
+        }
     }
 }
