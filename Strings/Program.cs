@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Threading;
 
 namespace Strings
@@ -7,6 +8,7 @@ namespace Strings
     {
         static void Main(string[] args)
         {
+            StringEquality();
             Console.WriteLine($"Current culture : {Thread.CurrentThread.CurrentCulture}");
 
             int ordinalResult = string.Compare("apple", "Apple", StringComparison.Ordinal);
@@ -22,6 +24,23 @@ namespace Strings
             string s2 = "erkla\u0308ren";
             DisplayAllComparision(s1, s2);
 
+        }
+
+        private static void StringEquality()
+        {
+            bool areEqual = string.Equals("Apple", "Pineapple", StringComparison.CurrentCultureIgnoreCase);
+
+            int cmpResult = string
+                            .Compare("Apple",
+                                     "Pineapple",
+                                     CultureInfo.GetCultureInfo("fr-FR"),
+                                     CompareOptions.IgnoreSymbols);
+
+            areEqual = (cmpResult == 0);
+
+            //Case-sensitive Ordinal
+            areEqual = ("Apple" == "Pineapple");
+            areEqual = "Apple".Equals("Pineapple");
         }
 
         private static void DisplayAllComparision(string s1, string s2)
