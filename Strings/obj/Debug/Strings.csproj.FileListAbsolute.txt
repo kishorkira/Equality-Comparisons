@@ -4,3 +4,4 @@ C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\Strings\bin\Debug\
 C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\Strings\obj\Debug\Strings.csproj.CoreCompileInputs.cache
 C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\Strings\obj\Debug\Strings.exe
 C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\Strings\obj\Debug\Strings.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\Strings\obj\Debug\Strings.csprojResolveAssemblyReference.cache
