@@ -24,6 +24,17 @@ namespace Strings
             string s2 = "erkla\u0308ren";
             DisplayAllComparision(s1, s2);
 
+            Pooling();
+
+        }
+
+        private static void Pooling()
+        {
+            string apple1 = "Apple";
+            string apple2 = "Ap" + "ple";
+            Console.WriteLine("Pooling");
+            Console.WriteLine(apple1 == apple2);
+            Console.WriteLine(ReferenceEquals(apple1, apple2));
         }
 
         private static void StringEquality()
