@@ -21,6 +21,15 @@ namespace StringIntCompare
             DisplayOrder(apple, pear);
             DisplayOrder(pear, apple);
 
+            DisplayOrder(3, 3);
+            DisplayOrder(3, 4);
+            DisplayOrder(4, 3);
+
+            if(3.CompareTo(4) < 0)
+                Console.WriteLine("3 < 4");
+
+            if (3 < 4)
+                Console.WriteLine("3 < 4");
 
         }
 
