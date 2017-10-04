@@ -2,7 +2,7 @@
 
 namespace StringIntCompare
 {
-    class CalorieCount : IComparable<CalorieCount>
+    public struct CalorieCount : IComparable<CalorieCount>,IEquatable<CalorieCount>,IComparable
     {
         private float _calories;
         public float Calories { get => _calories; }
@@ -33,6 +33,19 @@ namespace StringIntCompare
         public int CompareTo(CalorieCount other)
             => this._calories.CompareTo(other._calories);
 
+        public bool Equals(CalorieCount other)
+        {
+            return this._calories == other._calories;
+        }
+
+        public int CompareTo(object obj)
+        {
+            if (obj == null)
+                throw new ArgumentNullException("obj");
+            if (!(obj is CalorieCount))
+                throw new ArgumentException("Expected CalorieCount instance", "obj");
+            return CompareTo((CalorieCount)obj);
+        }
 
         public static bool operator <(CalorieCount x, CalorieCount y)
             => x._calories < y._calories;
