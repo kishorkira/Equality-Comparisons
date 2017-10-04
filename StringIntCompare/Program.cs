@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StringIntCompare
 {
@@ -10,26 +6,36 @@ namespace StringIntCompare
     {
         static void Main(string[] args)
         {
-            string apple = "apple";
-            string pear = "pear";
 
-            Console.WriteLine(apple.CompareTo(apple));
-            Console.WriteLine(apple.CompareTo(pear));
-            Console.WriteLine(pear.CompareTo(apple));
+            CalorieCount cal300 = new CalorieCount(300f);
+            CalorieCount cal400 = new CalorieCount(400f);
 
-            DisplayOrder(apple, apple);
-            DisplayOrder(apple, pear);
-            DisplayOrder(pear, apple);
+            DisplayOrder(cal300, cal300);
+            DisplayOrder(cal300, cal400);
+            DisplayOrder(cal400, cal300);
 
-            DisplayOrder(3, 3);
-            DisplayOrder(3, 4);
-            DisplayOrder(4, 3);
+            if (cal300 < cal400)
+                Console.WriteLine("cal300 < cal400");
+            //string apple = "apple";
+            //string pear = "pear";
 
-            if(3.CompareTo(4) < 0)
-                Console.WriteLine("3 < 4");
+            //Console.WriteLine(apple.CompareTo(apple));
+            //Console.WriteLine(apple.CompareTo(pear));
+            //Console.WriteLine(pear.CompareTo(apple));
 
-            if (3 < 4)
-                Console.WriteLine("3 < 4");
+            //DisplayOrder(apple, apple);
+            //DisplayOrder(apple, pear);
+            //DisplayOrder(pear, apple);
+
+            //DisplayOrder(3, 3);
+            //DisplayOrder(3, 4);
+            //DisplayOrder(4, 3);
+
+            //if(3.CompareTo(4) < 0)
+            //    Console.WriteLine("3 < 4");
+
+            //if (3 < 4)
+            //    Console.WriteLine("3 < 4");
 
         }
 
