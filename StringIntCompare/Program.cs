@@ -16,6 +16,8 @@ namespace StringIntCompare
 
             if (cal300 < cal400)
                 Console.WriteLine("cal300 < cal400");
+            if(cal300 != cal400)
+                Console.WriteLine("cal300 != cal400");
             //string apple = "apple";
             //string pear = "pear";
 
