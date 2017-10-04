@@ -10,9 +10,33 @@
         {
             this._cookingMethod = cookingMethod;
         }
+
         public override string ToString()
         {
-            return $"{_cookingMethod} {Name}";
+            return $"{Name} : {_cookingMethod}";
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (!base.Equals(obj)) { return false; }
+
+            CookedFood rhs = obj as CookedFood;
+            return this._cookingMethod == rhs._cookingMethod;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode() ^ this._cookingMethod.GetHashCode();
+        }
+
+        public static bool operator ==(CookedFood x, CookedFood y)
+        {
+            return object.Equals(x, y);
+        }
+
+        public static bool operator !=(CookedFood x, CookedFood y)
+        {
+            return !object.Equals(x, y);
         }
     }
 }

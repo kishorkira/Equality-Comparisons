@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValueTypeEquality", "ValueTypeEquality\ValueTypeEquality.csproj", "{476927C5-636F-40C0-A2FD-5A8A55B7B746}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefTypeEquality", "RefTypeEquality\RefTypeEquality.csproj", "{609BF8A2-5F5E-4694-989D-AF70A85A723F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{476927C5-636F-40C0-A2FD-5A8A55B7B746}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{476927C5-636F-40C0-A2FD-5A8A55B7B746}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{476927C5-636F-40C0-A2FD-5A8A55B7B746}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609BF8A2-5F5E-4694-989D-AF70A85A723F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609BF8A2-5F5E-4694-989D-AF70A85A723F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609BF8A2-5F5E-4694-989D-AF70A85A723F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609BF8A2-5F5E-4694-989D-AF70A85A723F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

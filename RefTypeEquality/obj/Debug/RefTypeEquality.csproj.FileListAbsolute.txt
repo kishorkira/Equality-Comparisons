@@ -1,0 +1,7 @@
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\bin\Debug\RefTypeEquality.exe.config
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\bin\Debug\RefTypeEquality.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\bin\Debug\RefTypeEquality.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\obj\Debug\RefTypeEquality.csprojResolveAssemblyReference.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\obj\Debug\RefTypeEquality.csproj.CoreCompileInputs.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\obj\Debug\RefTypeEquality.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\RefTypeEquality\obj\Debug\RefTypeEquality.pdb
