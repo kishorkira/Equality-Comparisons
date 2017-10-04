@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Strings
 {
@@ -6,14 +7,34 @@ namespace Strings
     {
         static void Main(string[] args)
         {
+            Console.WriteLine($"Current culture : {Thread.CurrentThread.CurrentCulture}");
+
             int ordinalResult = string.Compare("apple", "Apple", StringComparison.Ordinal);
             int ordinalIgnoreCaseResult = string.Compare("apple", "Apple", StringComparison.OrdinalIgnoreCase);
-            
-            //Console.WriteLine($"Ordinal Compare : {ordinalResult}");
-            //Console.WriteLine($"OrdinalIgnoreCase Compare : {ordinalIgnoreCaseResult}");
+            //string s1 = "apple";
+            //string s2 = "Apple";
+            //U+00DF is eszett
+            //string s1 = "Stra\u00dfe";
+            //string s2 = "Strasse";
+            //a-umlaut - \u00e4
+            //umlaut - \0306
+            string s1 = "erkl\u00e4ren";
+            string s2 = "erkla\u0308ren";
+            DisplayAllComparision(s1, s2);
 
-            DisplayComparision("apple", "Apple", StringComparison.OrdinalIgnoreCase);
-            DisplayComparision("apple", "Apple", StringComparison.Ordinal);
+        }
+
+        private static void DisplayAllComparision(string s1, string s2)
+        {
+            Console.WriteLine();
+            DisplayComparision(s1, s2, StringComparison.Ordinal);
+            DisplayComparision(s1, s2, StringComparison.OrdinalIgnoreCase);
+            Console.WriteLine();
+            DisplayComparision(s1, s2, StringComparison.CurrentCulture);
+            DisplayComparision(s1, s2, StringComparison.CurrentCultureIgnoreCase);
+            Console.WriteLine();
+            DisplayComparision(s1, s2, StringComparison.InvariantCulture);
+            DisplayComparision(s1, s2, StringComparison.InvariantCultureIgnoreCase);
 
         }
 
