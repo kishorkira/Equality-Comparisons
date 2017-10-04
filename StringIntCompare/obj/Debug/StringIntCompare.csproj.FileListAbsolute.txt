@@ -1,0 +1,7 @@
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\bin\Debug\StringIntCompare.exe.config
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\bin\Debug\StringIntCompare.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\bin\Debug\StringIntCompare.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\obj\Debug\StringIntCompare.csprojResolveAssemblyReference.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\obj\Debug\StringIntCompare.csproj.CoreCompileInputs.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\obj\Debug\StringIntCompare.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\StringIntCompare\obj\Debug\StringIntCompare.pdb
