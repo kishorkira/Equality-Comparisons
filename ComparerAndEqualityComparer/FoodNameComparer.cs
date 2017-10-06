@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComparerAndEqualityComparer
 {
-    class FoodNameComparer : IComparer<Food>
+    class FoodNameComparer : Comparer<Food>
     {
-        public int Compare(Food x, Food y)
+        public override int Compare(Food x, Food y)
         {
             if (x == null && y == null)
                 return 0;
