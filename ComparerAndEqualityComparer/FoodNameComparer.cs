@@ -5,6 +5,9 @@ namespace ComparerAndEqualityComparer
 {
     class FoodNameComparer : Comparer<Food>
     {
+        private static FoodNameComparer _instance = new FoodNameComparer();
+        public static FoodNameComparer Instance { get => _instance; }
+        private FoodNameComparer() { }
         public override int Compare(Food x, Food y)
         {
             if (x == null && y == null)

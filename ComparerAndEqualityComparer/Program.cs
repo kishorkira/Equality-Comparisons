@@ -16,7 +16,7 @@ namespace ComparerAndEqualityComparer
                     new Food("Pear",FoodGroup.Fruit),
                     new Food("Apple",FoodGroup.Fruit)
             };
-            Array.Sort(list,new FoodNameComparer());
+            Array.Sort(list,FoodNameComparer.Instance);
 
             foreach(var item in list)
                 Console.WriteLine(item);
