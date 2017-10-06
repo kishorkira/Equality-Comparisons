@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ComparerAndEqualityComparer
 {
@@ -10,21 +7,34 @@ namespace ComparerAndEqualityComparer
     {
         static void Main(string[] args)
         {
-            Food[] list1 = 
-                {  
-                    new Food("Apple",FoodGroup.Fruit),
-                    new Food("Pear",FoodGroup.Fruit),
-                    new CookedFood("Apple",FoodGroup.Fruit,"Baked")
+
+            var foodItems = new HashSet<FoodItem>(FoodItemEqualityComparer.Instance)
+            {
+                new FoodItem("Apple",FoodGroup.Fruit),
+                new FoodItem("Pear",FoodGroup.Fruit),
+                new FoodItem("pineapple",FoodGroup.Fruit),
+                new FoodItem("Apple",FoodGroup.Fruit)
+
             };
-            Food[] list2 =
-                {
-                    new CookedFood("Apple",FoodGroup.Fruit,"Baked"),
-                    new Food("Pear",FoodGroup.Fruit),
-                    new Food("Apple",FoodGroup.Fruit)
-            };
-            SortAndShowList(list1);
-            Console.WriteLine();
-            SortAndShowList(list2);
+
+            foreach(var food in foodItems)
+                Console.WriteLine(food);
+            
+            //Food[] list1 = 
+            //    {  
+            //        new Food("Apple",FoodGroup.Fruit),
+            //        new Food("Pear",FoodGroup.Fruit),
+            //        new CookedFood("Apple",FoodGroup.Fruit,"Baked")
+            //};
+            //Food[] list2 =
+            //    {
+            //        new CookedFood("Apple",FoodGroup.Fruit,"Baked"),
+            //        new Food("Pear",FoodGroup.Fruit),
+            //        new Food("Apple",FoodGroup.Fruit)
+            //};
+            //SortAndShowList(list1);
+            //Console.WriteLine();
+            //SortAndShowList(list2);
 
         }
 
