@@ -43,7 +43,7 @@ namespace ComparerAndEqualityComparer
         }
         public override int GetHashCode()
         {
-            return this._name.GetHashCode() ^ this._foodGroup.GetHashCode();
+            return this._name.GetHashCode();
         }
     }
 }
