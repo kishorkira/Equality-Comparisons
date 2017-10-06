@@ -1,0 +1,7 @@
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\bin\Debug\ComparerAndEqualityComparer.exe.config
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\bin\Debug\ComparerAndEqualityComparer.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\bin\Debug\ComparerAndEqualityComparer.pdb
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\obj\Debug\ComparerAndEqualityComparer.csprojResolveAssemblyReference.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\obj\Debug\ComparerAndEqualityComparer.csproj.CoreCompileInputs.cache
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\obj\Debug\ComparerAndEqualityComparer.exe
+C:\Users\kisho\Google Drive\.Net\C#\C#\EqualityAndComparisons\ComparerAndEqualityComparer\obj\Debug\ComparerAndEqualityComparer.pdb
