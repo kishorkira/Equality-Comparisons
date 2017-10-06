@@ -1,4 +1,4 @@
-﻿namespace RefTypeEquality
+﻿namespace ComparerAndEqualityComparer
 {
     public enum FoodGroup { Meat, Fruit, Vegetables, Sweet }
     public class Food

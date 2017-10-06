@@ -10,6 +10,16 @@ namespace ComparerAndEqualityComparer
     {
         static void Main(string[] args)
         {
+            Food[] list = 
+                {   new Food("Orange",FoodGroup.Fruit),
+                    new Food("Banana",FoodGroup.Fruit),
+                    new Food("Pear",FoodGroup.Fruit),
+                    new Food("Apple",FoodGroup.Fruit)
+            };
+            Array.Sort(list,new FoodNameComparer());
+
+            foreach(var item in list)
+                Console.WriteLine(item);
         }
     }
 }
