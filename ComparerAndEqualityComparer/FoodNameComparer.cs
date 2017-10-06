@@ -16,7 +16,12 @@ namespace ComparerAndEqualityComparer
                 return -1;
             if (y == null)
                 return 1;
-            return string.Compare(x.Name, y.Name, StringComparison.CurrentCulture);
+            int nameOrder = string.Compare(x.Name, y.Name, StringComparison.CurrentCulture);
+            if (nameOrder != 0)
+                return nameOrder;
+            return string.Compare(x.FoodGroup.ToString(),
+                                  y.FoodGroup.ToString(),
+                                  StringComparison.CurrentCulture);
         }
     }
 }

@@ -10,14 +10,27 @@ namespace ComparerAndEqualityComparer
     {
         static void Main(string[] args)
         {
-            Food[] list = 
-                {   new Food("Orange",FoodGroup.Fruit),
-                    new Food("Banana",FoodGroup.Fruit),
+            Food[] list1 = 
+                {  
+                    new Food("Apple",FoodGroup.Fruit),
+                    new Food("Pear",FoodGroup.Fruit),
+                    new CookedFood("Apple",FoodGroup.Fruit,"Baked")
+            };
+            Food[] list2 =
+                {
+                    new CookedFood("Apple",FoodGroup.Fruit,"Baked"),
                     new Food("Pear",FoodGroup.Fruit),
                     new Food("Apple",FoodGroup.Fruit)
             };
-            Array.Sort(list,FoodNameComparer.Instance);
+            SortAndShowList(list1);
+            Console.WriteLine();
+            SortAndShowList(list2);
 
+        }
+
+        private static void SortAndShowList(Food[] list)
+        {
+            Array.Sort(list, FoodNameComparer.Instance);
             foreach(var item in list)
                 Console.WriteLine(item);
         }
